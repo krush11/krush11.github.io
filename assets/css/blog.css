@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+}
+
+#main_text {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#nav a {
+    box-sizing: content-box;
+    color: lightskyblue;
+    text-decoration: none;
+    padding: 2px 7px;
+    padding-right: 0px;
+}
+
+a {
+    box-sizing: border-box;
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+    padding: 2px 7px;
+    padding-right: 0px;
+}
+
+a:focus {
+    box-sizing: content-box;
+    border: 3px solid;
+    border-color: white;
+    padding: 2px 4px;
+}
+
+p {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+main {
+    width: 85vw;
+    margin-top: 10px;
+    color: white;
+}
+
+main p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+#blink {
+    font-size: x-large;
+    animation: blink 1s steps(2, end) infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: white;
+    }
+}
+
+.box {
+    width: inherit;
+    height: auto;
+    border: 3px solid blue;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.box div {
+    padding: 20px 30px;
+}
+
+.box_content {
+    /* margin: 30px; */
+    line-height: 27px;
+}
+
+.box_title {
+    margin-top: -10px;
+    position: absolute;
+    margin-left: 45px;
+    background-color: black;
+    font-family: inherit;
+
+}

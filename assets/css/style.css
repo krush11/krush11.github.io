@@ -1,0 +1,151 @@
+body {
+    background-image: url(../imgs/background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: monospace;
+    color: lavenderblush;
+    display: flex;
+    justify-content: space-around;
+    overflow-y: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "->";
+    color: rgb(186, 221, 253);
+    margin-right: 10px;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+a {
+    box-sizing: content-box;
+    color: rgb(255, 188, 188);
+    text-decoration: none;
+    padding: 2px 7px;
+    padding-right: 0px;
+}
+
+a:visited{
+    color: rgb(255, 153, 153);
+}
+
+a:focus {
+    box-sizing: content-box;
+    border: 3px solid;
+    border-color: white;
+    padding: 2px 4px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    height: 100vh;
+}
+
+#text1 {
+    display: flex;
+    justify-content: center;
+}
+
+#my-photo {
+    height: 80vh;
+    width: 30vw;
+}
+
+main {
+    width: 60vw;
+    font-size: 1rem;
+}
+
+main ul {
+    color: rgb(186, 221, 253);
+}
+
+#name {
+    margin-top: 10vh;
+    font-size: 2rem;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+}
+
+#social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 140px;
+    margin-left: 20px;
+}
+
+#google {
+    width: 35px;
+    height: 40px;
+    margin-top: -4px;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+#github {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: scroll;
+    }
+
+    aside, #my-photo{
+        width: 95vw;
+        height: auto;
+        margin-top: 1rem;
+    }
+    main {
+        margin-top: -3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+    }
+    #name {
+        display: flex;
+        justify-content: center;
+    }
+    #social-icons {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        margin-left: -2rem;
+    }
+    #google {
+        width: 35px;
+        height: 40px;
+        margin-top: -4px;
+        margin: 0rem 1rem;
+        margin-top: -5px;
+    }
+    #linkedin {
+        width: 30px;
+        height: 30px;
+        margin: 0rem 1rem;
+    }
+    #github {
+        width: 30px;
+        height: 30px;
+        margin: 0rem 1rem;
+    }
+}
