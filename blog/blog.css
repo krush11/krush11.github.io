@@ -42,7 +42,7 @@ p {
 }
 
 main {
-    width: 85vw;
+    width: 75vw;
     margin-top: 10px;
     color: white;
 }
@@ -70,7 +70,7 @@ main p {
 .box {
     width: inherit;
     height: auto;
-    border: 3px solid blue;
+    border: 1.5px solid blue;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
