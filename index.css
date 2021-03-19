@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 145, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Play';
+    color: white;
+    background-image: url(assets/background.jepg);
+    background-size: cover;
+}
+
+main {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#krushnal {
+    border-radius: 50%;
+    width: 15vw;
+    height: 14vw;
+}
+
+.about_me {
+    margin: 5vw;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+ul {
+    list-style: '-';
+    font-size: 1.5rem;
+}
+li {
+    margin: 1rem;
+}
+
+a:visited {
+    color: black;
+}
