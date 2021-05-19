@@ -18,18 +18,14 @@
 </head>
 
 <body onload="show_section('profile')">
-    <aside>
+    <aside id="mySidenav" class="sidenav d-f-c jc-sb">
         <div id="name">
             <p id="name_1">Hi,</p>
             <br>
             <div class="sign">
-                <span class="fast-flicker">I</span>'m &nbsp;
-                <span class="flicker">K</span>
-                <span class="fast-flicker">ru</span>
-                <span class="flicker">s</span>
-                <span class="fast-flicker">h</span>
-                <span class="flicker">na</span>
-                <span class="fast-flicker">l</span>
+                <span class="fast-flicker">I</span>'m&nbsp;
+                <span class="flicker">K</span><span class="fast-flicker">ru</span><span class="flicker">s</span><span
+                    class="fast-flicker">h</span><span class="flicker">na</span><span class="fast-flicker">l</span>
             </div>
         </div>
 
@@ -43,31 +39,31 @@
         </div>
         <div id="nav_bar">
             <ul>
-                <a onclick="show_section('profile')">
+                <a onclick="toggleMenu(); show_section('profile')">
                     <li>
                         <img src="./assets/imgs/profile.svg" alt="profile">
                         <div>My Profile</div>
                     </li>
                 </a>
-                <a onclick="show_section('experience')">
+                <a onclick="toggleMenu(); show_section('experience')">
                     <li>
                         <img src="./assets/imgs/experience.svg" alt="experience">
                         <div>Experience</div>
                     </li>
                 </a>
-                <a onclick="show_section('skills')">
+                <a onclick=" toggleMenu(); show_section('skills')">
                     <li>
                         <img src="./assets/imgs/skills.svg" alt="skills">
                         <div>Skills</div>
                     </li>
                 </a>
-                <a href="./blog.html">
+                <a href="./blog.html" onclick="toggleMenu()">
                     <li>
                         <img src="./assets/imgs/blog.svg" alt="blog">
                         <div>Mini-Blog</div>
                     </li>
                 </a>
-                <a href="./assets/krushnal_CV.pdf" target="_blank">
+                <a href="./assets/krushnal_CV.pdf" target="_blank" onclick="toggleMenu()">
                     <li>
                         <img src="./assets/imgs/resume.svg" alt="resume">
                         <div>Resume</div>
@@ -101,6 +97,7 @@
     </aside>
 
     <main>
+        <span class="menu-btn d-f" onclick="toggleMenu()">&#9776; Menu</span>
         <section class="content" id="profile">
             <div class="d-f-c ai-c jc-c">
                 <img id="me" src="./assets/imgs/Krushnal.jpg">
@@ -109,9 +106,12 @@
                     <span style="color: red;">Patel</span>
                 </h1>
                 <span class="d-f-c" id="about_me">
-                    <p>Software Lead at <a href="http://www.defianz-dtusdc.com/">TDR-DTUSDC</a> | Full Stack Developer
+                    <p>Student Developer <a
+                            href="https://mentorship.lfx.linuxfoundation.org/project/3cc2be4b-e208-496c-b801-23ef3bb2716a" target="_blank">ATOM@LFX
+                            Mentorship</a> | Software Lead at <a href="http://www.defianz-dtusdc.com" target="_blank">TDR-DTUSDC</a>
                     </p><br>
-                    <p>Computer Engineering at <a href="http://dtu.ac.in/">Delhi Technological University'23</a></p>
+                    <p>Full Stack Developer | Computer Engineering at <a href="http://dtu.ac.in/">Delhi Technological
+                            University'23</a></p>
                     <br>
                     <p> Ex-TA at <a href="https://www.codingninjas.com/">Coding Ninjas</a></p>
                     <br><br><br><br>
@@ -141,13 +141,15 @@
                     <div class="exp-sec">
                         <div class="desc">
                             <h4>Software Architect</h4>
-                            <p><a href="https://www.linkedin.com/company/dtusdc/">DTU Self Driving Cars Project</a></p>
+                            <p><a href="https://www.linkedin.com/company/dtusdc/">DTU Self Driving Cars Project</a>
+                            </p>
                         </div>
                         <div class="timeline">
                             <p>Dec 2019 - Dec 2020</p>
                         </div>
                         <div class="list">
-                            <li>Developed software suite of an autonomous vehicle forIGVC’20 (canceled due to COVID’19)
+                            <li>Developed software suite of an autonomous vehicle forIGVC’20 (canceled due to
+                                COVID’19)
                             </li>
                             <li>Integrated data from sensors into ROS with NMEA 0183 compliance</li>
                             <li>Build custom arduino scripts to extract data from rotary encoders</li>
@@ -199,7 +201,6 @@
             </div>
         </section>
     </main>
-
     <script src="./assets/js/home.js"></script>
 </body>
 

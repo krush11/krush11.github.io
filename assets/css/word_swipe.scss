@@ -2,9 +2,9 @@
     font-size: 1.2rem;
     font-weight: 100;
     color: #d8d8d8;
-    margin-top: 5rem;
+    margin-top: -5rem;
     overflow: hidden;
-    float: left;
+    // float: left;
     height: 20px;
 }
 
@@ -62,5 +62,11 @@
     }
     100% {
         margin-top: -270px;
+    }
+}
+
+@media all and (max-height: 800px) {
+    .wordCarousel {
+        margin-top: 0;
     }
 }
