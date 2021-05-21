@@ -11,13 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
     <link rel="icon" href="https://image.flaticon.com/icons/png/128/59/59118.png">
-    <link rel="stylesheet" href="./assets/css/common.scss">
     <link rel="stylesheet" href="./assets/css/home.scss">
-    <link rel="stylesheet" href="./assets/css/neon.scss">
-    <link rel="stylesheet" href="./assets/css/word_swipe.scss">
 </head>
 
-<body onload="show_section('profile')">
+<body class="d-f-r" onload="show_section('profile')">
     <aside id="mySidenav" class="sidenav d-f-c jc-sb">
         <div id="name">
             <p id="name_1">Hi,</p>
@@ -37,7 +34,7 @@
                 <li>Software Architect <a onclick="show_section(profile)">@TDR-DTUSDC</a></li>
             </ul>
         </div>
-        <div id="nav_bar">
+        <div class="d-f-c" id="nav_bar">
             <ul>
                 <a onclick="toggleMenu(); show_section('profile')">
                     <li>
@@ -72,7 +69,7 @@
             </ul>
         </div>
         <div id="footer">
-            <span id="text_1">
+            <span class="d-f-c jc-c ai-c" id="text_1">
                 <p>Want to collaborate on a project?</p>
                 <p>I am always available on any of these:</p> <br>
             </span>
@@ -119,7 +116,7 @@
             </div>
         </section>
         <section class="content" id="experience">
-            <div class="d-f-c ai-c">
+            <div class="d-f-c jc-c ai-c">
                 <div class="d-f-c">
                     <div class="exp-sec">
                         <div class="desc">
@@ -174,8 +171,8 @@
         <section class="content" id="skills">
             <div class="d-f-c ai-c">
                 <div class="d-f-c ai-c">
-                    <h1>Languages</h1>
-                    <div id="skills_container" class="d-f-r">
+                    <h2>Languages</h2>
+                    <div class="d-f-r jc-c skills_container">
                         <img src="./assets/imgs/skills/c++.svg">
                         <img src="./assets/imgs/skills/python.svg">
                         <img src="./assets/imgs/skills/latex.png">
@@ -185,8 +182,8 @@
                     </div>
                 </div>
                 <div class="d-f-c  ai-c">
-                    <h1>Tools+Tech</h1>
-                    <div id="skills_container" class="d-f-r">
+                    <h2>Tools+Tech</h2>
+                    <div class="d-f-r jc-c skills_container">
                         <img src="./assets/imgs/skills/linux.svg">
                         <img src="./assets/imgs/skills/ros.svg">
                         <img src="./assets/imgs/skills/nodejs.svg">

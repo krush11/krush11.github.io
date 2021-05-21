@@ -1,7 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Roboto:300,400,500,700,900&amp;display=swap");
+.d-f-c {
+    display: flex;
+    flex-direction: column;
+}
 
-html {
-    max-height: 100vh;
+.d-f-r {
+    display: flex;
+    flex-direction: row;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
 }
 
 body {
@@ -16,6 +32,7 @@ body {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 p {
@@ -32,8 +49,6 @@ aside {
     min-width: fit-content !important;
     padding: 2rem;
     box-sizing: border-box;
-    transition: all 1s !important;
-    display: flex;
     z-index: 100;
 }
 
@@ -54,8 +69,6 @@ aside {
     width: 100%;
     height: 40vh;
     color: white;
-    display: flex;
-    flex-direction: column;
 }
 
 #nav_bar ul li {
@@ -79,7 +92,6 @@ aside {
     height: 5vh;
     margin-right: 3vw;
     fill: green;
-    /* margin-left: -1vw; */
 }
 
 #nav_bar a {
@@ -100,12 +112,8 @@ aside {
 
 #text_1 {
     color: white;
-    font-family: "Play";
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.2rem;
+    line-height: 20px;
 }
 
 #social a {
@@ -114,7 +122,7 @@ aside {
 }
 
 #social img {
-    padding: 0.5rem;
+    padding: 0.6rem;
     height: 20px;
     width: 20px;
 }
@@ -179,8 +187,8 @@ main {
 
 #me {
     border-radius: 50%;
-    width: 15vw;
-    height: 15vw;
+    width: 12.5vw;
+    height: 12.5vw;
 }
 
 #profile {
@@ -201,11 +209,13 @@ main {
 
 #skills div {
     flex-wrap: wrap;
-    width: 100%;
-    height: max-content;
 }
 
-#skills img {
+.skills_container {
+    width: 50vw;
+}
+
+.skills_container img {
     max-width: 5rem;
     max-height: 5rem;
     margin: 2rem;
@@ -213,7 +223,7 @@ main {
 
 #skills > div > div {
     margin: 3rem 0;
-    width: 70%;
+    width: 70vw;
 }
 
 #experience > div > div {
@@ -232,7 +242,6 @@ main {
 }
 
 .desc h4 {
-    font-family: "Play";
     font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: 500;
@@ -251,8 +260,218 @@ main {
     margin-bottom: 1rem;
 }
 
-#skills_container {
-    overflow-y: scroll;
+.sign {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff0062, -0.2rem 0.1rem 1rem #ff0062, 0.2rem 0.1rem 1rem #ff0062,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff0062, -0.2rem 0.1rem 1rem #ff0062, 0.2rem 0.1rem 1rem #ff0062,
+            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+        color: #ff0062;
+        text-shadow: none;
+    }
+    82%,
+    97% {
+        color: #ff0062;
+        text-shadow: none;
+    }
+}
+
+.flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+    0% {
+        color: #ff0062;
+        text-shadow: none;
+    }
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff0062, -0.2rem 0.1rem 1rem #ff0062, 0.2rem 0.1rem 1rem #ff0062,
+            0 -0.5rem 2rem #ff0062, 0 0.5rem 3rem #ff0062;
+    }
+}
+
+@keyframes flicker {
+    from {
+        opacity: 1;
+    }
+    4% {
+        opacity: 0.9;
+    }
+    6% {
+        opacity: 0.85;
+    }
+    8% {
+        opacity: 0.95;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    11% {
+        opacity: 0.922;
+    }
+    12% {
+        opacity: 0.9;
+    }
+    14% {
+        opacity: 0.95;
+    }
+    16% {
+        opacity: 0.98;
+    }
+    17% {
+        opacity: 0.9;
+    }
+    19% {
+        opacity: 0.93;
+    }
+    20% {
+        opacity: 0.99;
+    }
+    24% {
+        opacity: 1;
+    }
+    26% {
+        opacity: 0.94;
+    }
+    28% {
+        opacity: 0.98;
+    }
+    37% {
+        opacity: 0.93;
+    }
+    38% {
+        opacity: 0.5;
+    }
+    39% {
+        opacity: 0.96;
+    }
+    42% {
+        opacity: 1;
+    }
+    44% {
+        opacity: 0.97;
+    }
+    46% {
+        opacity: 0.94;
+    }
+    56% {
+        opacity: 0.9;
+    }
+    58% {
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 0.99;
+    }
+    68% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    72% {
+        opacity: 0.95;
+    }
+    93% {
+        opacity: 0.93;
+    }
+    95% {
+        opacity: 0.95;
+    }
+    97% {
+        opacity: 0.93;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wordCarousel {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #d8d8d8;
+    margin-top: -5rem;
+    overflow: hidden;
+    height: 20px;
+}
+
+.wordCarousel li {
+    color: #fbff00;
+    font-weight: 100;
+    height: 45px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+.flip2 {
+    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip4 {
+    animation: flip4 12s cubic-bezier(0.23, 1, 0.72, 1.2) infinite;
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: -90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0px;
+    }
+    99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+@media all and (max-height: 800px) {
+    .wordCarousel {
+        margin-top: 0;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -282,6 +501,15 @@ main {
     }
     #skills > div > div {
         margin: 0;
-        width: auto;
+        width: 90vw;
+        overflow-y: scroll;
+    }
+    .skills_container {
+        width: 80vw;
+    }
+    #skills img {
+        max-width: 4rem;
+        max-height: 4rem;
+        margin: 1.5rem;
     }
 }
