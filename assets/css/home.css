@@ -116,15 +116,10 @@ aside {
     line-height: 20px;
 }
 
-#social a {
-    border-radius: 50%;
-    margin: 0 0.5rem;
-}
-
 #social img {
-    padding: 0.6rem;
-    height: 20px;
-    width: 20px;
+    margin: 0 1rem;
+    height: 25px;
+    width: 25px;
 }
 
 main {
@@ -135,46 +130,6 @@ main {
     display: none;
     margin: 2rem;
     font-size: 1.5rem;
-}
-
-#gmail {
-    border: 1.5px solid #bb001c;
-}
-
-#github {
-    border: 1.5px solid #4840c0;
-}
-
-#linkedin {
-    border: 1.5px solid #0077b5;
-}
-
-#twitter {
-    border: 1.5px solid #1da1f2;
-}
-
-#instagram {
-    border: 1.5px solid #e1306c;
-}
-
-#gmail:hover {
-    box-shadow: 0 0 15px 1px #bb001b;
-}
-
-#github:hover {
-    box-shadow: 0 0 15px 1px #4840c0;
-}
-
-#linkedin:hover {
-    box-shadow: 0 0 15px 1px #0077b5;
-}
-
-#twitter:hover {
-    box-shadow: 0 0 15px 1px #1da1f2;
-}
-
-#instagram:hover {
-    box-shadow: 0 0 15px 1px #e1306c;
 }
 
 .content {
