@@ -25,7 +25,6 @@ body {
     background-color: rgb(215, 253, 253);
     display: flex;
     flex-direction: row;
-    user-select: none;
     max-width: 100vw;
     max-height: 100vh;
 }
